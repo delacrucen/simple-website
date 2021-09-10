@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+  <!-- This is the head section, it is for storing metadata 
+    and items that are pulled in from other resources -->
+  <head>
+    <title>Landing Page!</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script src="./js/main.js"></script>
+  </head>
+  <!-- There is an ID on the body so that 
+    the back to top button will go to this ID -->
+  <body id="body">
+    <!-- NAV BAR SECTION -->
+    <header>
+      <div class="header-container">
+        <div id="company-logo">
+          <a href="./index.html">
+            <a href="./index.html">Cute catitus photography</a>
+          </a>
+          <nav class="menu-wrapper">
+            <ul id="main-menu">
+              <li class="menu-item">
+                <a href="#">Our story</a>
+              </li>
+              <li class="menu-item">
+                <a href="#">Gallery</a>
+              </li>
+              <li class="menu-item">
+                <a href="#">Events</a>
+              </li>
+              <li class="menu-item">
+                <a href="#">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- HERO IMAGE SECTION -->
+    <div id="hero-image">
+      <div class="overlay">
+        <h1 class="tag-line">Capturing your beloved one</h1>
+      </div>
+    </div>
+    <!-- BACK TO TOP BUTTON -->
+    <a href="#body" id="topButton" title="Go to Top">Top</a>
+    <!-- OUR STORY SECTION -->
+    <section id="our-story">
+      <div class="container">
+        <h2>Our story</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
+          nihil hic aliquam voluptatum laborum ratione ut praesentium velit
+          tempore quis, ipsam minus aperiam ex eligendi, neque placeat magni,
+          porro facere provident id incidunt. Consectetur laudantium maiores
+          eaque illum distinctio, dolor similique expedita cum impedit adipisci
+          ipsum accusantium fugit non blanditiis ullam, sapiente ad eligendi
+          iusto, inventore eius saepe a recusandae deleniti? Quia facere at
+          incidunt veritatis veniam alias sequi sunt, nulla odit nisi vitae
+          praesentium ratione explicabo consectetur repellat! Modi iure
+          exercitationem magnam corporis voluptate commodi neque eveniet! Natus,
+          adipisci eaque voluptatum magnam veritatis harum aut quasi laborum
+          exercitationem at!
+        </p>
+      </div>
+    </section>
+    <!-- GALLERY SECTION -->
+    <section id="gallery">
+      <div class="container">
+        <h2>Gallery</h2>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam ut
+          commodi esse nihil temporibus. Nostrum eum at quam magni eos nemo
+          quisquam pariatur omnis! Alias nam obcaecati et commodi ducimus, velit
+          perferendis ut odio numquam!
+        </p>
+        <div id="gallery-wrapper">
+          <div class="gallery-row">
+            <div class="gallery-item">
+              <div>
+                <img
+                  src="https://picsum.photos/id/169/300/200"
+                  alt="cute dogs"
+                />
+                <p>Sample text</p>
+                <img
+                  src="https://picsum.photos/id/219/300/200"
+                  alt="cute leopard"
+                />
+                <p>Sample text</p>
+                <img
+                  src="https://picsum.photos/id/237/300/200"
+                  alt="cute black dogs"
+                />
+                <p>Sample text</p>
+              </div>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <div>
+              <img src="https://picsum.photos/id/275/300/200" alt="cute bird" />
+              <p>Sample text</p>
+              <img src="https://picsum.photos/id/40/300/200" alt="cute nose" />
+              <p>Sample text</p>
+              <img src="https://picsum.photos/id/433/300/200" alt="cute bear" />
+              <p>Sample text</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- EVENTS SECTION -->
+    <section id="events">
+      <div class="container">
+        <h2>Upcoming Events</h2>
+        <table id="upcoming-events-table">
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Event</th>
+              <th>Location</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>09/09/2021</td>
+              <td>Photgraphy showcase</td>
+              <td>Lambaré, Paraguay</td>
+              <td>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla
+                earum laborum culpa porro. Illum vel quos sed repellendus
+                pariatur error?
+              </td>
+            </tr>
+            <tr>
+              <td>15/01/2022</td>
+              <td>Art gallery</td>
+              <td>Encarnación, Paraguay</td>
+              <td>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Maiores harum in autem vitae quisquam.
+              </td>
+            </tr>
+            <tr>
+              <td>22/02/2022</td>
+              <td>Photography competition</td>
+              <td>Asunción, Paraguay</td>
+              <td>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Quisquam pariatur doloribus rerum beatae, commodi porro minus
+                nisi! Veritatis, sapiente neque!
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <!-- CONTACT FORM SECTION, mailthisto.to API doesn't work for me -->
+    <section id="contact">
+      <div class="container">
+        <h3>Contact Us</h3>
+        <p>
+          Feel free to share your questions or feedbacks in the form below.
+          Thanks!
+        </p>
+        <form
+          action="https://mailthis.to/hixeh13958@shensufu.com"
+          method="POST"
+        >
+          <fieldset>
+            <input type="text" name="name" placeholder="Your name is?" />
+            <input type="email" name="_replyto" placeholder="Your e-mail?" />
+            <textarea name="message" placeholder="Write to us!"></textarea>
+            <input
+              type="hidden"
+              name="_confirmation"
+              value="Horay! Your form has been sent"
+            />
+            <button>Send!</button>
+          </fieldset>
+        </form>
+      </div>
+    </section>
+    <!-- FOOTER SECTION -->
+    <footer>
+      <div class="footer-container">
+        <nav class="menu-wrapper">
+          <ul id="footer-menu">
+            <li class="menu-item"><a href="#">Privacy Policy</a></li>
+            <li class="menu-item"><a href="#">Legal</a></li>
+            <li class="menu-item"><a href="#">Sponsors</a></li>
+          </ul>
+        </nav>
+        <div id="copyright">
+          &copy; Copyright - Cute photos. All rights reserved.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
