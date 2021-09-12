@@ -1,0 +1,100 @@
+/* Resets the box model sizing */
+html {
+  box-sizing: border-box;
+}
+
+/* Applies box-sizing:border-box to all elements 
+and before and after the content */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* Body Defaults */
+body {
+  /* 100% of the screen size (100% viewport height) */
+  min-height: 100vh;
+  /* Smooths scroll behavior */
+  scroll-behavior: smooth;
+  /* Render text faster disabling some text characters */
+  text-rendering: optimizeSpeed;
+  /* Adds spacing between lines */
+  line-height: 1.5;
+}
+
+/* Margins and Padding */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+li,
+p,
+pre,
+blockquote,
+figure,
+figcaption,
+hr,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+/* Lists */
+ul {
+  list-style: none;
+}
+
+/* Forms */
+input,
+textarea,
+select,
+button {
+  color: inherit;
+  font: inherit;
+  letter-spacing: inherit;
+}
+
+/* Default input style */
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+}
+
+input,
+textarea,
+button {
+  border: 1px solid gray;
+}
+
+/* Default button style */
+button {
+  padding: 0.75em 1em;
+  line-height: inherit;
+  border-radius: 0;
+  background-color: transparent;
+}
+
+/* Media defaults*/
+img,
+svg,
+iframe,
+video,
+object,
+embed {
+  display: block;
+  max-width: 100%;
+}
+
+/* Table default */
+table {
+  table-layout: fixed;
+  width: 100%;
+}
