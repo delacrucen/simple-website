@@ -1,6 +1,8 @@
 /* Resets the box model sizing */
 html {
   box-sizing: border-box;
+  /* Smooths scroll behavior */
+  scroll-behavior: smooth;
 }
 
 /* Applies box-sizing:border-box to all elements 
@@ -15,8 +17,6 @@ and before and after the content */
 body {
   /* 100% of the screen size (100% viewport height) */
   min-height: 100vh;
-  /* Smooths scroll behavior */
-  scroll-behavior: smooth;
   /* Render text faster disabling some text characters */
   text-rendering: optimizeSpeed;
   /* Adds spacing between lines */
@@ -71,7 +71,7 @@ textarea {
 input,
 textarea,
 button {
-  border: 1px solid gray;
+  border: 1px solid #ccc;
 }
 
 /* Default button style */

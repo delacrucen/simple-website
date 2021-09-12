@@ -1,6 +1,6 @@
 /* Base styles */
 * {
-  font-family: "IBM Plex Sans Arabic", sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 
 a {
@@ -14,13 +14,14 @@ a:hover {
 
 section {
   display: block;
-  padding-top: 75px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .container {
   width: 970px;
   margin: auto;
-  padding-top: 75px;
+  padding-top: 40px;
 }
 
 .container h2,
@@ -29,11 +30,11 @@ section {
   text-align: center;
 }
 .container h2 {
-  font-size: 20px;
+  font-size: 30px;
   font-weight: bold;
 }
 .container h3 {
-  font-size: 15px;
+  font-size: 20px;
 }
 
 /* Header */
@@ -71,6 +72,7 @@ header .menu-wrapper {
 }
 
 header nav ul li {
+  font-size: 20px;
   display: inline-block;
   margin-right: 20px;
 }
@@ -109,7 +111,7 @@ header nav ul li {
 
 /* Top button */
 #topButton {
-  /* display: none; */
+  display: none;
   position: fixed;
   bottom: 20px;
   right: 30px;
@@ -127,4 +129,137 @@ header nav ul li {
 
 #topButton:hover {
   background-color: tomato;
+}
+
+/* Our story */
+#our-story {
+  margin-bottom: 30px;
+  padding: 25px 0;
+}
+
+#our-story p {
+  text-align: justify;
+}
+
+/* Gallery */
+#gallery {
+  background-color: #21252b;
+  color: #fff;
+  padding: 25px;
+  text-align: center;
+}
+
+.gallery-row {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+  justify-content: space-evenly;
+}
+
+.gallery-item {
+  flex: 1;
+  flex-basis: 33%;
+}
+
+.gallery-description {
+  margin-bottom: 20px;
+}
+
+/* Events */
+#events {
+  background-color: #eee;
+  padding: 25px 0;
+  margin-bottom: 10px;
+}
+
+#upcoming-events-table {
+  width: 100%;
+  border-spacing: 10px;
+  border-collapse: separate;
+  margin-bottom: 20px;
+}
+
+#upcoming-events-table th {
+  text-align: left;
+  font-weight: bolder;
+}
+
+/* Contact */
+#contact {
+  padding: 15px;
+  width: 100%;
+  margin-bottom: 60px;
+}
+
+#contact fieldset {
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+  background-color: whitesmoke;
+  border: 1px #ccc solid;
+  box-shadow: 0 0 4px #ccc;
+}
+
+#contact p {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#contact input,
+#contact textarea {
+  margin-bottom: 20px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+#contact input {
+  height: 40px;
+}
+
+#contact textarea {
+  height: 150px;
+}
+
+#contact button {
+  width: 100%;
+  height: 60px;
+  text-align: center;
+  margin: auto;
+}
+
+#contact button:hover {
+  background-color: #ccc;
+  cursor: pointer;
+}
+
+#contact button:active,
+#contact button p {
+  background-color: rgb(56, 56, 56);
+  color: #fff;
+}
+
+/* Footer */
+footer {
+  background-color: #2a303d;
+  position: relative;
+  bottom: 0;
+  height: 100px;
+}
+
+footer .menu-wrapper {
+  justify-content: space-evenly;
+  line-height: 30px;
+  text-align: left;
+}
+
+footer nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+  padding: 0 10px;
+  line-height: 100px;
+}
+
+footer #copyright {
+  color: #fff;
+  line-height: 100px;
 }
